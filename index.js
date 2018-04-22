@@ -8,7 +8,7 @@ const isGitClean = (altPath = cwd) => {
   let stdout;
 
   if (!isGit(altPath)) {
-    return false;
+    return null;
   }
 
   try {
@@ -18,9 +18,9 @@ const isGitClean = (altPath = cwd) => {
       ({ stdout } = execa.shellSync(`(cd ${altPath} ; git status --short)`));
     }
 
-    return stdout.length <= 0;
+    return stdout.length > 0;
   } catch (e) {
-    return false;
+    return null;
   }
 };
 

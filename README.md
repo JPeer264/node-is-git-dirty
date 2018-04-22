@@ -1,32 +1,33 @@
-# is-git-clean
+# is-git-dirty
 
-[![Build Status](https://travis-ci.org/JPeer264/node-is-git-clean.svg?branch=master)](https://travis-ci.org/JPeer264/node-is-git-clean)
-[![Build status](https://ci.appveyor.com/api/projects/status/ehj6762gbj1e2qyc?svg=true)](https://ci.appveyor.com/project/JPeer264/node-is-git-clean)
-[![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-clean/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-clean?branch=master)
+[![Build Status](https://travis-ci.org/JPeer264/node-is-git-dirty.svg?branch=master)](https://travis-ci.org/JPeer264/node-is-git-dirty)
+[![Build status](https://ci.appveyor.com/api/projects/status/ehj6762gbj1e2qyc?svg=true)](https://ci.appveyor.com/project/JPeer264/node-is-git-dirty)
+[![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-dirty/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-dirty?branch=master)
 
 Checks synchronously if the git repository is clean. This assumes that no files are added, untracked or modified.
 
 ## Installation
 
 ```sh
-$ npm i is-git-clean --save
+$ npm i is-git-dirty --save
 ```
 or
 ```sh
-$ yarn add is-git-clean
+$ yarn add is-git-dirty
 ```
 
 ## Usage
 
 Returns:
-- `false`: Files are added, untracked, modified or the path is not a git repository
-- `true`: No files are added, untracked or modified.
+- `null`: Directory is not a git repository
+- `true`: Files are added, untracked, modified
+- `false`: No files are added, untracked or modified. Git is clean
 
 ```js
-const isGitClean = require('is-git-clean');
+const isGitDirty = require('is-git-dirty');
 
-isGitClean(); // true or false of process.cwd()
-isGitClean('any/git/repo'); // true or false
+isGitDirty(); // true or false of process.cwd()
+isGitDirty('any/git/repo'); // true or false
 ```
 
 ## LICENSE

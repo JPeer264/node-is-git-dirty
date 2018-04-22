@@ -1,6 +1,7 @@
 import test from 'ava';
 import path from 'path';
 import fs from 'fs-extra';
+import { homedir } from 'os';
 
 import isGitClean from './';
 
@@ -27,8 +28,15 @@ const isGitMacro = (t, dir, assert) => {
   t.is(isClean, assert);
 };
 
-test(isGitMacro, 'clean', true);
-test(isGitMacro, 'modified', false);
-test(isGitMacro, 'added', false);
-test(isGitMacro, 'untracked', false);
-test(isGitMacro, 'notexisting', false);
+isGitMacro.title = (providedTitle, dir) => `${providedTitle} ${dir}`;
+
+test(isGitMacro, 'clean', false);
+test(isGitMacro, 'modified', true);
+test(isGitMacro, 'added', true);
+test(isGitMacro, 'untracked', true);
+
+test('non existing path', (t) => {
+  const isClean = isGitClean(homedir());
+
+  t.is(isClean, null);
+});

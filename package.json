@@ -1,7 +1,7 @@
 {
-  "name": "is-git-clean",
+  "name": "is-git-dirty",
   "version": "0.0.0",
-  "description": "Check if a repository has no untracked or added files",
+  "description": "Check if a repository has untracked or added files",
   "main": "build.js",
   "scripts": {
     "pretest": "npm run lint",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JPeer264/node-is-git-clean.git"
+    "url": "git+https://github.com/JPeer264/node-is-git-dirty.git"
   },
   "keywords": [
     "is",
@@ -33,7 +33,7 @@
   "author": "Jan Peer Stöcklmair",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JPeer264/node-is-git-clean/issues"
+    "url": "https://github.com/JPeer264/node-is-git-dirty/issues"
   },
   "ava": {
     "require": "babel-register",
@@ -48,7 +48,7 @@
       "index.js"
     ]
   },
-  "homepage": "https://github.com/JPeer264/node-is-git-clean#readme",
+  "homepage": "https://github.com/JPeer264/node-is-git-dirty#readme",
   "dependencies": {
     "execa": "^0.10.0",
     "is-git-repository": "^1.1.1"
