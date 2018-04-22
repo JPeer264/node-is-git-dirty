@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import { homedir } from 'os';
 
-import isGitClean from './';
+import isGitClean from './index';
 
 const fixtures = path.join(process.cwd(), 'test', 'fixtures');
 

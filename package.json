@@ -39,15 +39,6 @@
     "require": "babel-register",
     "babel": "inherit"
   },
-  "nyc": {
-    "exclude": [
-      "build.js",
-      "test.js"
-    ],
-    "include": [
-      "index.js"
-    ]
-  },
   "homepage": "https://github.com/JPeer264/node-is-git-dirty#readme",
   "dependencies": {
     "execa": "^0.10.0",
