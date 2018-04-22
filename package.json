@@ -1,6 +1,6 @@
 {
   "name": "is-git-dirty",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if a repository has untracked or added files",
   "main": "build.js",
   "scripts": {
