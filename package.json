@@ -9,12 +9,8 @@
     "lint": "eslint index.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run babel",
-    "babel": "babel index.js -o build.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
+    "babel": "babel index.js -o build.js",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
