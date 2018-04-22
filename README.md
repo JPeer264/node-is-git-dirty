@@ -1,5 +1,9 @@
 # is-git-clean
 
+[![Build Status](https://travis-ci.org/JPeer264/node-is-git-clean.svg?branch=master)](https://travis-ci.org/JPeer264/node-is-git-clean)
+[![Build status](https://ci.appveyor.com/api/projects/status/ehj6762gbj1e2qyc?svg=true)](https://ci.appveyor.com/project/JPeer264/node-is-git-clean)
+[![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-clean/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-clean?branch=master)
+
 Checks synchronously if the git repository is clean. This assumes that no files are added, untracked or modified.
 
 ## Installation
