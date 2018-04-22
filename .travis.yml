@@ -1,0 +1,15 @@
+language: node_js
+os:
+  - linux
+  - osx
+node_js:
+  - 6
+  - 8
+install:
+  - yarn
+script: yarn test
+notifications:
+  email:
+    on_failure: change
+after_success:
+  - yarn run coveralls
