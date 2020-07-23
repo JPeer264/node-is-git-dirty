@@ -1,3 +1,7 @@
+2.0.1 - July, 23 2020
+
+* 5ac179d Chore: remove __tests__ from npm package (JPeer264)
+
 2.0.0 - July, 23 2020
 
 * c9f072c Docs: master -> main (JPeer264)
