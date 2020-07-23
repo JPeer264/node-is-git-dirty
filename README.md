@@ -1,6 +1,6 @@
 # is-git-dirty
 
-[![Build Status](https://travis-ci.org/JPeer264/node-is-git-dirty.svg?branch=master)](https://travis-ci.org/JPeer264/node-is-git-dirty)
+[![Build Status](https://travis-ci.com/JPeer264/node-is-git-dirty.svg?branch=master)](https://travis-ci.com/JPeer264/node-is-git-dirty)
 [![Build status](https://ci.appveyor.com/api/projects/status/ehj6762gbj1e2qyc?svg=true)](https://ci.appveyor.com/project/JPeer264/node-is-git-dirty)
 [![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-dirty/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-dirty?branch=master)
 
@@ -20,7 +20,7 @@ $ yarn add is-git-dirty
 
 Returns:
 - `null`: Directory is not a git repository
-- `true`: Files are added, untracked, modified
+- `true`: Files are added, untracked or modified
 - `false`: No files are added, untracked or modified. Git is clean
 
 ```js
