@@ -3,7 +3,7 @@ import isGit from 'is-git-repository';
 
 const processCwd = process.cwd();
 
-const isGitClean = (cwd = processCwd): boolean | null => {
+const isGitDirty = (cwd = processCwd): boolean | null => {
   if (!isGit(cwd)) {
     return null;
   }
@@ -17,4 +17,4 @@ const isGitClean = (cwd = processCwd): boolean | null => {
   }
 };
 
-export default isGitClean;
+export default isGitDirty;
