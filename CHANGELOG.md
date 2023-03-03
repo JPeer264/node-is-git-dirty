@@ -1,3 +1,8 @@
+2.0.2 - March, 03 2023
+
+* 755595b Docs: use import in the readme (JPeer264)
+* 18cdc0a Chore: change variable name of the default export (closes #22) (JPeer264)
+
 2.0.1 - July, 23 2020
 
 * 5ac179d Chore: remove __tests__ from npm package (JPeer264)
