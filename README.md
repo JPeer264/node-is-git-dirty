@@ -24,7 +24,7 @@ Returns:
 - `false`: No files are added, untracked or modified. Git is clean
 
 ```js
-const isGitDirty = require('is-git-dirty');
+import isGitDirty from 'is-git-dirty';
 
 isGitDirty(); // true or false of process.cwd()
 isGitDirty('any/git/repo'); // true or false
